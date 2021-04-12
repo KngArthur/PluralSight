@@ -5,7 +5,7 @@ namespace GradeBook
 {
 
 
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -13,7 +13,12 @@ namespace GradeBook
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.5);
-            book.ShowStatistics();
+
+            var stats = book.GetStatistics();
+
+            Console.WriteLine($"The lowest grade is {stats.Low}");
+            Console.WriteLine($"The Highest grade is {stats.High}");
+            Console.WriteLine($"The Average grade is {stats.Average:N1}");
         }
     }
 }
