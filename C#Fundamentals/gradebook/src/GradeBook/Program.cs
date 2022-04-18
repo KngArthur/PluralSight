@@ -30,6 +30,12 @@ namespace GradeBook
                 {
                     Console.WriteLine(ex.Message);
                 }
+                // can be used to catch all exceptions. No specified error just general message.
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    throw;
+                }
                 finally
                 {
                     Console.WriteLine($"{input} Was Entered");
