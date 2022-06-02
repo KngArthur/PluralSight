@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
+
+  public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
   public class Book
   {
     public Book(string name)
@@ -41,12 +44,19 @@ namespace GradeBook
       if(grade <= 100 && grade >= 0)
       {
         grades.Add(grade);
+        // method to invoke grade added delegate
+        if(GradeAdded != null)
+        { 
+          GradeAdded(this, new EventArgs());
+        }
       }
       else
       {
         throw new ArgumentException($"invalid {nameof(grade)}");
       }
     }
+
+    public event GradeAddedDelegate GradeAdded;
 
     public void CalculateStatistics(double grade)
     {
@@ -116,7 +126,7 @@ namespace GradeBook
     public string Name
     {
       get; 
-      private set;
+      set;
     }
     
     public const string CATEGORY = "Science";
