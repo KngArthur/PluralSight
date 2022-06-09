@@ -11,10 +11,6 @@ namespace GradeBook
             
             // handler for grade added event
             book.GradeAdded += OnGradeAdded;
-            book.GradeAdded += OnGradeAdded;
-            book.GradeAdded -= OnGradeAdded;
-            book.GradeAdded += OnGradeAdded;
-            
 
             while(true)
             {
