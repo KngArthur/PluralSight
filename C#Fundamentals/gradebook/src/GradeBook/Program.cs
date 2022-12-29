@@ -24,12 +24,12 @@ namespace GradeBook
         }
 
         private static void EnterGrades(IBook book)
-        { 
-            while(true)
+        {
+            while (true)
             {
                 Console.WriteLine("Please enter grade or 'q' to quit.");
                 var input = Console.ReadLine();
-                if(input == "q")
+                if (input == "q")
                 {
                     break;
                 }
@@ -38,16 +38,16 @@ namespace GradeBook
                     var grade = double.Parse(input);
                     book.AddGrade(grade);
                 }
-                catch(ArgumentException ex)
+                catch (ArgumentException ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
-                catch(FormatException ex)
+                catch (FormatException ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
                 // can be used to catch all exceptions. No specified error just general message.
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                     throw;
@@ -56,7 +56,7 @@ namespace GradeBook
                 {
                     Console.WriteLine($"{input} Was Entered");
                 }
-                
+
             }
         }
 
