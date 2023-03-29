@@ -1,16 +1,16 @@
-# Refactoring to Clean C#
+# Refactoring to Clean C Sharp
 
 - refactoring a speaker registration app
 - data entered determines if eligible to be a speaker
-    - has logic behind scenes that determines eligibility
+  - has logic behind scenes that determines eligibility
 - initial code make the logic flow hard to see
 - Visual Studio helps us analyze our cod equality
-    - right click on project, calculate code metrics, displays number metrics
-        - maintainability 0-100 score of how easy it is to maintain
-        - Cyclomatic Complexity, counts number of paths through the method
-        - class coupling, shows how many class' its coupled
-        - lines of source code, shows total lines
-        - executable code, shows the functioning lines
+  - right click on project, calculate code metrics, displays number metrics
+    - maintainability 0-100 score of how easy it is to maintain
+    - Cyclomatic Complexity, counts number of paths through the method
+    - class coupling, shows how many class' its coupled
+    - lines of source code, shows total lines
+    - executable code, shows the functioning lines
 - tests help document intent, automated tests help us make sure app is functioning without "running the code"
 
 ## Refactoring Agenda
@@ -62,10 +62,10 @@ When to Refactor
 
 - if it ain't broke don't fix it
 - You need to work be working with the code
-    - don't change for readers that are not guaranteed to show up
+  - don't change for readers that are not guaranteed to show up
 - when you find it difficult to comprehend or change
-    - excessive refactoring is questionable when change is small
-    - generally size of refactoring should be in line with the code being changed
+  - excessive refactoring is questionable when change is small
+  - generally size of refactoring should be in line with the code being changed
 - Add tests first for regression protection
 
 Code Reviews
@@ -74,6 +74,6 @@ Code Reviews
 - set guidelines as to what is and isn't off limits
 - assure readability and cut off issues down stream
 - paired coding
-    - real time code review
-    - increases quality, cuts down on shortcuts
-    - naming and refactoring is easier
+  - real time code review
+  - increases quality, cuts down on shortcuts
+  - naming and refactoring is easier

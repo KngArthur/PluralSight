@@ -14,7 +14,7 @@
 - both are pieces of code, called by name
 - used interchangeably in this chapter
 - CORE DIFFERENCE
-    - Methods are associated with an Object
+  - Methods are associated with an Object
 
 ## When to create a function
 
@@ -112,10 +112,10 @@
 ## Summery
 
 - When to create a function
-    * duplication, indentation, unclear intent, multiple tasks
+  - duplication, indentation, unclear intent, multiple tasks
 - Eliminate indentation
-    * Extract method, fail fast, return early
-    * limit variable lifetime (Mayfly variables)
+  - Extract method, fail fast, return early
+  - limit variable lifetime (Mayfly variables)
 - Avoid boolean arguments
 - Watch for signs function is too long
 - Avoid catching unrecoverable exceptions

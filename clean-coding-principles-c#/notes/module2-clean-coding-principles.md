@@ -7,21 +7,21 @@
 ## Right Tool For The Job
 
 - When selecting tools the risks sit at the boundaries of their intended purpose
-    * always tempting to force the use of a familiar or already used tool for convenience
+  - always tempting to force the use of a familiar or already used tool for convenience
 - the boundaries and interactions are where the risks exist
 - reduces reusability and consistency
 - Examples
-    * injecting HTML in .js files
-    * HTML in SQL
-    * CSS in HTML
+  - injecting HTML in .js files
+  - HTML in SQL
+  - CSS in HTML
 - avoid using one language to write in another language via strings
 - Stay Native
-    * it stays cached, injected code will not be available when not in use
-    * can make use of tool like code coloring and syntax checking
-    * separation of concerns allow the code to be easily understood
+  - it stays cached, injected code will not be available when not in use
+  - can make use of tool like code coloring and syntax checking
+  - separation of concerns allow the code to be easily understood
 - leverage libraries to generate other formats
 - ONE LANGUAGE PER FILE
-    * always refactor to separate
+  - always refactor to separate
 
 ### Every Tech is Potentially Evil
 
@@ -32,17 +32,17 @@
 
 - you want to be concise and clear at all times
 - Signal
-    * any code that follows the TED rule
-        * T = Terse
-        * E = Expressive
-        * D = Does one thing
+  - any code that follows the TED rule
+    - T = Terse
+    - E = Expressive
+    - D = Does one thing
 - Noise
-    * code that reduces readability and hinders maintenance
+  - code that reduces readability and hinders maintenance
 
 ### Our Brian Is The Compiler
 
 - follow the rule of 7 for human memory so humans can understand our code
-    * can only remember 7 things easily at once
+  - can only remember 7 things easily at once
 
 ### The Mess Builds Quietly
 

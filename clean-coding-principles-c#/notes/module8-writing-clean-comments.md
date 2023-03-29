@@ -2,19 +2,19 @@
 
 - comments should only be chosen as a solution as a last resort
 - comments lie
-    - not kept up to date
-    - can be made left to be redundant
-    - can be a crutch for bad code
+  - not kept up to date
+  - can be made left to be redundant
+  - can be a crutch for bad code
 - alternatively can be necessary as conveying intent without is not easy
-    - developers often assume their code is descriptive when it's not
+  - developers often assume their code is descriptive when it's not
 
 ## Comments: A Necessity and a Crutch
 
 ### Prefer expressive code over comments
 
 - strive to make it clear with descriptive code over comments
-    - code is more likely to be updated
-    - is a more definitive reference for the function
+  - code is more likely to be updated
+  - is a more definitive reference for the function
 - Use comments when code isn't sufficient
 
 ### Redundant Comments
@@ -71,18 +71,18 @@ How To Avoid
 - hoarding mentality adds noise and technical debt
 - creates ambiguity on if the code should or should not be used, deleted, or refactored
 - Automated refactoring tools do not touch commented code
-    - can "leave behind" code and a mess if used later
+  - can "leave behind" code and a mess if used later
 
 How to Avoid
 
 - a project with proper source control allows you to access past versions
 - no need to keep commented code
 - ask yourself
-    - when would it be uncommented
-    - can i get it from source control later
-    - is this incomplete work that should be work on via branch
-    - should this be toggled via configuration setting
-    - did i refactor out the need for this code
+  - when would it be uncommented
+  - can i get it from source control later
+  - is this incomplete work that should be work on via branch
+  - should this be toggled via configuration setting
+  - did i refactor out the need for this code
 
 ### Divider
 
@@ -112,8 +112,8 @@ How to Avoid
 - avoid template designs with characters or lines
 - avoid line endings
 - don't repeated yourself
-    - file name is shown
-    - name and date available through source control
+  - file name is shown
+  - name and date available through source control
 
 ### Defect Log
 

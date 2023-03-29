@@ -37,7 +37,7 @@ Promote Reuse
 
 Reduce Complexity
 
-- used to hide complex or long methods or hide away properties to increase readability 
+- used to hide complex or long methods or hide away properties to increase readability
 - Hides the complexity of a "solved problem"
 - class groups related operations behind the scenes
 
@@ -61,14 +61,14 @@ Cohesion
 - Avoid attracting the lazy (Magnet Classes)
 - High Cohesion classes have a descriptive name
 - Watch for
-    - Standalone Methods
-        - the methods and properties should work together to achieve use
-    - Fields used by only one method
-        - should be used by many methods, if not consider extracting to separate class
-    - Classes the change often
-        - if class receives many more commits than average is a candidate for separate high cohesion classes
+  - Standalone Methods
+    - the methods and properties should work together to achieve use
+  - Fields used by only one method
+    - should be used by many methods, if not consider extracting to separate class
+  - Classes the change often
+    - if class receives many more commits than average is a candidate for separate high cohesion classes
 - a class can group many different functions under one item eg Vehicle example
-    - this class should be split into all the separate concerns of the vehicle, financing, maintenance, general info classes
+  - this class should be split into all the separate concerns of the vehicle, financing, maintenance, general info classes
 
 Single Responsibility Principle
 
@@ -82,18 +82,18 @@ Broad Names Lead to Poor cohesion
 - use noun names
 - The more concise the name the smaller the classes
 - a good measure of cohesion is how many methods use the class' instance variables
-    - if many do not, they should be refactored out to another Class
+  - if many do not, they should be refactored out to another Class
 
 Signs a Class is Too Small
 
 - Rare to complain the a class is too small but they can be
 - Inappropriate intimacy
-    - if two classes call a large portion of each others methods
+  - if two classes call a large portion of each others methods
 - Feature envy
-    - if one class relies heavily on each other
+  - if one class relies heavily on each other
 - too many pieces
-    - overly small classes make it hard to understand how the system works
-    - can lead to classes that are tightly bound to each other
+  - overly small classes make it hard to understand how the system works
+  - can lead to classes that are tightly bound to each other
 - these issues are unicorns in the real world, very rare classes usually overly large
 
 ## Primitive Obsession
