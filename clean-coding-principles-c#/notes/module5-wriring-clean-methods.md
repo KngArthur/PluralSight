@@ -16,18 +16,18 @@
 ## When to Create a Function
 
 - functions organize code into small targeted pieces of logic
-    - help to organize code like paragraphs do in writing
+  - help to organize code like paragraphs do in writing
 
 ### 4 Reasons Too
 
 - Duplication
-    - honors the clean principle
+  - honors the clean principle
 - Indentation
-    - sign of complexity
+  - sign of complexity
 - Unclear Intent
-    - provide high level summaries of function
+  - provide high level summaries of function
 - > 1 Task
-    - do one thing and one thing well
+  - do one thing and one thing well
 
 ### Duplication
 
@@ -51,11 +51,13 @@ Extract Method
 
 ### Fail Fast
 
+- if the system cannot reliably and logically move on. STOP PROCESSING
 - throw exception as soon as its applied
-    - called a guard clause
+  - called a guard clause
 - very useful for switch statements
 - early errors help debugging
 - note unexpected value in error message
+- clear function names in try blocks make it easy to identify what is being tested
 
 ### Unclear Intent
 
@@ -84,8 +86,8 @@ Extract Method
 - multiple conditionals
 - hard to digest clear purpose
 - functions should
-    - rarely be over 20 lines
-    - rarely be over 3 parameters
+  - rarely be over 20 lines
+  - rarely be over 3 parameters
 - a simple function can be longer with more lines
 - a complex function should be shorter with several other methods called inside it
 
@@ -93,7 +95,7 @@ Extract Method
 
 - only catch exceptions you can handle immediately
 - if cannot handle the proper app behavior is too crash
-    - example of failing fast and loud
+  - example of failing fast and loud
 - broken app that doesn't crash is a danger to itself, its data, and its users
 
 ### Exception Types
@@ -116,8 +118,3 @@ Ignorable
 - some can be ignored if your completely clear on the implications of doing so
 - very rare
 - must think through downstream impacts of ignoring exceptions
-
-### Fail Fast
-
-- if the system cannot reliably and logically move on. STOP PROCESSING
-- clear function names in try blocks make it easy to identify what is being tested
