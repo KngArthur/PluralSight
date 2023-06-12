@@ -13,7 +13,7 @@
 
 - executed in a defined order, standard is vertically
 - always end with a semicolon
-- curley braces surround statements
+- curly braces surround statements
 - line breaks and white space are ignored by compiler
 
 ### C# Identifiers
@@ -25,7 +25,7 @@
 ### C# Comments
 
 - double slash denotes a comment // ....
-- multiline comments can be denoted with /* ... */
+- multiline comments can be denoted with /*...*/
 
 ### C# Keywords
 
@@ -37,12 +37,47 @@
 ### C# Variables
 
 - variables are storage locations that hold a value
-- must be named uniquily for each context it is used
+- must be named uniquely for each context it is used
 - can be "typed" (int, string, date, ect)
 - the type defines what kind of value it can hold
 - created in a declaration statement
-    - int age = 25;
-    - type name = value
+  - int age = 25;
+  - type name = value
 - C# is case sensitive, a variable with lower and uppercase names would be treated differently
 - variables are named with a lower case
 - variables are named in camelCase
+
+### Working with Built-In Types
+
+- every variable has a type
+- used to store information
+- expressions will return a value of a specified type
+- types determine where and the size set aside for the data
+
+### Data Types in C Sharp
+
+- there are two types
+  - predefined types
+  - user defined types
+- Predefined Types
+  - bool
+  - int
+    - int a = 2;
+    - int b = a + 3
+    - type = expression
+  - float
+  - double
+  - decimal
+  - char
+  - string
+
+### Using a Const Value
+
+- using const prefix stops a value from being changed
+
+### Understanding Strings
+
+- contain text
+- behave a bit differently that most data types
+- consist of a series of characters
+- string.Empty creates an empty string
