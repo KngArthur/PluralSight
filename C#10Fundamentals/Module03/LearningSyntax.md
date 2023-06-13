@@ -81,3 +81,23 @@
 - behave a bit differently that most data types
 - consist of a series of characters
 - string.Empty creates an empty string
+
+## C Sharp Operators
+
+- operators are often use in expressions on the right side of varible
+- 4 broad types
+  - arithmatic
+  - equality
+  - logical
+  - assignment
+
+### Arithmatic Operators
+
+- + for addition
+- - for subtraction
+- * multiplication
+- / for division
+- ++ for incrementing a value by one
+- -- for incrementing a value by one
+- many can be use in a compound fashion
+
