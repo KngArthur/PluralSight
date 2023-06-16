@@ -1,4 +1,4 @@
-# C Sharp Syntax
+# C\# Syntax
 
 - Understanding The Essential C# Building Blocks
 - Working with built-in types
@@ -9,32 +9,32 @@
 
 ## Understanding The C# Building Blocks
 
-### C# Statements
+### C\# Statements
 
 - executed in a defined order, standard is vertically
 - always end with a semicolon
 - curly braces surround statements
 - line breaks and white space are ignored by compiler
 
-### C# Identifiers
+### C\# Identifiers
 
 - names assigned to lines to be able to find them
 - can include letters, numbers or underscores
 - the first letter must be a letter or underscore
 
-### C# Comments
+### C\# Comments
 
 - double slash denotes a comment // ....
 - multiline comments can be denoted with /*...*/
 
-### C# Keywords
+### C\# Keywords
 
 - reserved words that have a special meaning
 - cannot be used as identifier
 - can comment using ctrl + k + c
 - can uncomment using ctrl + k + u
 
-### C# Variables
+### C\# Variables
 
 - variables are storage locations that hold a value
 - must be named uniquely for each context it is used
@@ -54,7 +54,7 @@
 - expressions will return a value of a specified type
 - types determine where and the size set aside for the data
 
-### Data Types in C Sharp
+### Data Types in C\#
 
 - there are two types
   - predefined types
@@ -82,22 +82,21 @@
 - consist of a series of characters
 - string.Empty creates an empty string
 
-## C Sharp Operators
+## C\# Operators
 
-- operators are often use in expressions on the right side of varible
+- operators are often use in expressions on the right side of variable
 - 4 broad types
-  - arithmatic
+  - arithmetic
   - equality
   - logical
   - assignment
 
-### Arithmatic Operators
+### Arithmetic Operators
 
-- + for addition
-- - for subtraction
-- * multiplication
-- / for division
-- ++ for incrementing a value by one
-- -- for incrementing a value by one
+- \+ for addition
+- \- for subtraction
+- \* multiplication
+- \/ for division
+- \++ for incrementing a value by one
+- \- for incrementing a value by one
 - many can be use in a compound fashion
-
