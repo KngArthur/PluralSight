@@ -69,6 +69,7 @@
   - double
   - decimal
   - char
+    - require single quotes
   - string
 
 ### Using a Const Value
@@ -100,3 +101,24 @@
 - \++ for incrementing a value by one
 - \- for incrementing a value by one
 - many can be use in a compound fashion
+
+### Members on Primitive Types
+
+- members is the group name to point to data and behavior on a type
+- accessed through dot operator
+  - .MinValue
+  - .MaxValue
+  - .IsWhiteSpace
+  - .IsPunctuation
+
+## Using Date and Time
+
+### Working With Dates
+
+- Datetime
+  - sets an exact point in time when instantiated
+  - eg. 12/08/2023 08:38:42
+- TimeSpan
+  - used to represent a period in time, expressed as length
+  - eg. 3 hours
+- both are created using constructors

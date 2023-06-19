@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-// Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
+Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
 
 // Console.WriteLine("Please enter your name: ");
 
@@ -9,32 +9,60 @@
 
 // string name2 = Console.ReadLine();
 
-int monthlyWage = 1234;
+// int monthlyWage = 1234;
 
-int months = 12, bonus = 1000;
+// int months = 12, bonus = 1000;
 
-bool isActive = true;
+// bool isActive = true;
 
-double rating = 99.25;
+// double rating = 99.25;
 
 // byte numberOfEmployees = 300;
 
-int hoursWorked;
+// int hoursWorked;
 
-hoursWorked = 125;
+// hoursWorked = 125;
 
-hoursWorked = 148;
+// hoursWorked = 148;
 
 // monthlyWage = true;
 
-const double interestRate = 0.07;
+// const double interestRate = 0.07;
 
-string firstName = "Bethany";
-string lastName = "";
+// string firstName = "Bethany";
+// string lastName = "";
 
-Console.WriteLine("Please enter your name");
-string name = Console.ReadLine();
+// Console.WriteLine("Please enter your name");
+// string name = Console.ReadLine();
+
+// int intMaxValue = int.MaxValue;
+// int intMinValue = int.MinValue;
+
+// char userSelection = 'a';
+// char upperVersion = char.ToUpper(userSelection);
+
+// bool isDigit = char.IsDigit(userSelection);
+
+// bool isLetter = char.IsLetter(userSelection);
 
 
+DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
+Console.WriteLine("Hire Date: " + hireDate);
 
+DateTime exitDate = new DateTime(2025, 12, 11);
+Console.WriteLine("Exit Date: " + exitDate);
 
+DateTime startDate = hireDate.AddDays(15);
+Console.WriteLine("Start Date: " + startDate);
+
+DateTime currentDate = DateTime.Now;
+bool areWeInDaylightSavings = currentDate.IsDaylightSavingTime();
+
+DateTime startHour = DateTime.Now;
+TimeSpan workTime = new TimeSpan(8, 35, 0);
+DateTime endHour = startHour.Add(workTime);
+
+Console.WriteLine("Start Time: " + startHour.ToLongDateString());
+Console.WriteLine("End Time: " + endHour.ToShortTimeString());
+
+Console.ReadLine();
