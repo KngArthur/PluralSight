@@ -1,0 +1,15 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Console.WriteLine(...);
+      string $A = Console.ReadLine();
+      Console.WriteLine(...);
+      string $B = Console.ReadLine();
+      
+      int $C = int.Parse($A);
+      int $D = int.Parse($B);
+      
+      var $E = $C + $D;
+  message: <pass>
+  languages: [csharp]
+  severity: INFO
