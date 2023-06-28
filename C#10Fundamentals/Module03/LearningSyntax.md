@@ -122,3 +122,45 @@
   - used to represent a period in time, expressed as length
   - eg. 3 hours
 - both are created using constructors
+
+## Converting Between Types
+
+- it is possible to convert from one type of variable to another
+- by using
+  - implicit convert
+  - explicit convert aka a cast
+  - helper
+
+### Implicit Convert
+
+- works as assigning a to a int number
+  - int a = 518855
+
+### Explicit Convert
+
+- can be used by putting the variable type in () in front of the type to be converted, aka right side of =
+
+### Implicit Typing
+
+- explicit is including the type in the variable naming
+- implicit uses the var keyword
+- the var keyword asks the compiler to figure out what type the variable is
+  - var a = 123 will be an int
+  - var b = false will be a bool
+- can be used interchangeably with explicit
+- can be less clean and readable
+- some applications of CSharp require implicit
+
+
+Console.WriteLine("Enter a first value");
+
+string stringValue1 = Console.ReadLine();
+
+Console.WriteLine("Enter a Second Value");
+
+string stringValue2 = Console.ReadLine();
+
+int intValue1 = int.Parse(stringValue1);
+int intValue2 = int.Parse(stringValue2);
+
+var sum = intValue1 + intValue2;
