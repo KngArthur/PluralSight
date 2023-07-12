@@ -15,13 +15,26 @@
 
 ### Using a Boolean Value
 
-- can use relational opperators in bool statements
+- can use relational operators in bool statements
     - == (equal)
     - != (not equal)
     - > or < (greater or less than)
     - >= or <= (greater or less or equal)
 
-### Using Boolean Logical Opperators
+### Using Boolean Logical Operators
 
 - && used if you want true to be returned if both statements return true
 - || used if you want true to be returned if either return true
+
+### Making Decisions With the If Statement
+
+- Used when the program flow is not sequential, or needs input
+- More often than not used a lot
+
+### Structure of If Statement
+
+- is at its base a boolean expression
+- executes if or else based on the true false
+- else is optional to use
+- multiple condition checks use else if
+
