@@ -46,23 +46,48 @@ Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
 // bool isLetter = char.IsLetter(userSelection);
 
 
-DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
-Console.WriteLine("Hire Date: " + hireDate);
+//DateTime hireDate = new DateTime(2022, 3, 28, 14, 30, 0);
+//Console.WriteLine("Hire Date: " + hireDate);
 
-DateTime exitDate = new DateTime(2025, 12, 11);
-Console.WriteLine("Exit Date: " + exitDate);
+//DateTime exitDate = new DateTime(2025, 12, 11);
+//Console.WriteLine("Exit Date: " + exitDate);
 
-DateTime startDate = hireDate.AddDays(15);
-Console.WriteLine("Start Date: " + startDate);
+//DateTime startDate = hireDate.AddDays(15);
+//Console.WriteLine("Start Date: " + startDate);
 
-DateTime currentDate = DateTime.Now;
-bool areWeInDaylightSavings = currentDate.IsDaylightSavingTime();
+//DateTime currentDate = DateTime.Now;
+//bool areWeInDaylightSavings = currentDate.IsDaylightSavingTime();
 
-DateTime startHour = DateTime.Now;
-TimeSpan workTime = new TimeSpan(8, 35, 0);
-DateTime endHour = startHour.Add(workTime);
+//DateTime startHour = DateTime.Now;
+//TimeSpan workTime = new TimeSpan(8, 35, 0);
+//DateTime endHour = startHour.Add(workTime);
 
-Console.WriteLine("Start Time: " + startHour.ToLongDateString());
-Console.WriteLine("End Time: " + endHour.ToShortTimeString());
+//Console.WriteLine("Start Time: " + startHour.ToLongDateString());
+//Console.WriteLine("End Time: " + endHour.ToShortTimeString());
 
-Console.ReadLine();
+//Console.ReadLine();
+
+Console.WriteLine("Enter the age of the new candidate: ");
+int age = int.Parse(Console.ReadLine());
+
+if (age < 18)
+{
+    Console.WriteLine("Too young to apply.");
+    Console.WriteLine("Send Email to candidate.");
+}
+else
+{
+    Console.WriteLine("Great, you can now start with the application.");
+}
+
+DateTime today = DateTime.Now;
+bool endOfMothPaymentStarted = false;
+
+if (today.Date.Day == 20)
+{
+    Console.WriteLine("Please start end-of-month employee payments");
+}
+else if (today.Date.Day >= 25 && !endOfMothPaymentStarted)
+{
+    Console.WriteLine("Payments will be late!!");
+}
