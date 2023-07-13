@@ -70,24 +70,60 @@ Console.WriteLine("Welcome to Bethany's Pie Shop HRM");
 Console.WriteLine("Enter the age of the new candidate: ");
 int age = int.Parse(Console.ReadLine());
 
-if (age < 18)
+//if (age < 18)
+//{
+//    Console.WriteLine("Too young to apply.");
+//    Console.WriteLine("Send Email to candidate.");
+//}
+//else
+//{
+//    Console.WriteLine("Great, you can now start with the application.");
+//}
+
+//DateTime today = DateTime.Now;
+//bool endOfMothPaymentStarted = false;
+
+//if (today.Date.Day == 20)
+//{
+//    Console.WriteLine("Please start end-of-month employee payments");
+//}
+//else if (today.Date.Day >= 25 && !endOfMothPaymentStarted)
+//{
+//    Console.WriteLine("Payments will be late!!");
+//}
+
+switch (age)
 {
-    Console.WriteLine("Too young to apply.");
-    Console.WriteLine("Send Email to candidate.");
-}
-else
-{
-    Console.WriteLine("Great, you can now start with the application.");
+    case < 18:
+    case > 65:
+        Console.WriteLine("Sorry, your age is not within the range we are looking for");
+        break;
+    case 23:
+        Console.WriteLine("Wow, exacly what we are looking for");
+        break;
+    default: 
+        Console.WriteLine("Great, you can now start the application!");
+        break;
 }
 
-DateTime today = DateTime.Now;
-bool endOfMothPaymentStarted = false;
+Console.WriteLine("Choose the action you want to do: ");
+Console.WriteLine("1. Add employee");
+Console.WriteLine("2. Update employee");
+Console.WriteLine("3. Delete employee");
+string selectedAction = Console.ReadLine();
 
-if (today.Date.Day == 20)
+switch (selectedAction)
 {
-    Console.WriteLine("Please start end-of-month employee payments");
-}
-else if (today.Date.Day >= 25 && !endOfMothPaymentStarted)
-{
-    Console.WriteLine("Payments will be late!!");
+    case "1":
+        Console.WriteLine("Adding new employee...");
+        break;
+    case "2": 
+        Console.WriteLine("Updating employee...");
+        break;
+    case "3":
+        Console.WriteLine("Deleting employee...");
+        break;
+    default:
+        Console.WriteLine("Invalid input");
+        break;
 }

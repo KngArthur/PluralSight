@@ -1,0 +1,26 @@
+rules:
+- id: untitled_rule
+  pattern: |
+      Console.WriteLine(...);
+      string $A = Console.ReadLine();
+      Console.WriteLine(...);
+      string $B = Console.ReadLine();
+      
+      int $C = int.Parse($A);
+      int $D = int.Parse($B);
+      
+      if($C == $D) 
+      {
+          Console.WriteLine("The values are equal!");
+      }
+      else if ($C < $D)
+      {
+          Console.WriteLine("The first value is smaller!");
+      }
+      else
+      {
+          Console.WriteLine("The second value is smaller!");
+      }
+  message: <pass>
+  languages: [csharp]
+  severity: INFO

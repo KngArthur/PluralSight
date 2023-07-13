@@ -38,3 +38,14 @@
 - else is optional to use
 - multiple condition checks use else if
 
+## Using the Switch Statement
+
+- a way of handling may elif statements
+- much cleaner and readable than many elif
+- switch uses case with break and default
+- the switch runs through all case statements and then the default
+- works for most primitive types but not float and double
+- each case much be unique
+- runs top to bottom
+- default does not have to be at bottom
+- case statements can be combined to have the same output
