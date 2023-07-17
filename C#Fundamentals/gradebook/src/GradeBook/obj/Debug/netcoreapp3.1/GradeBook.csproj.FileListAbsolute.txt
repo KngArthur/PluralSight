@@ -11,3 +11,5 @@ C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\
 C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.dll
 C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.pdb
 C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.genruntimeconfig.cache
+C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.csproj.AssemblyReference.cache
+C:\Users\b-Art\Documents\PluralSight\C#Fundamentals\gradebook\src\GradeBook\obj\Debug\netcoreapp3.1\GradeBook.GeneratedMSBuildEditorConfig.editorconfig

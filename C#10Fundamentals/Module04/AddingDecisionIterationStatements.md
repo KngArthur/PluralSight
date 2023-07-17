@@ -49,3 +49,23 @@
 - runs top to bottom
 - default does not have to be at bottom
 - case statements can be combined to have the same output
+
+## Adding Iterations
+
+### When do we use Itterations
+
+- used to continue executing a task (looping)
+- ask for input until stop is reached
+- keep reading files from disk
+
+### Loop Options in C\#
+
+- While
+    - pass in a bool expression
+    - executes while the bool is true
+    - condition is tested before loop runs
+    - is only tested again after it runs
+    - very easy to create infinate loops
+- do-while
+    - 
+- for
