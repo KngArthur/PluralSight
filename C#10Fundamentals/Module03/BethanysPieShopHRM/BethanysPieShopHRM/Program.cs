@@ -92,38 +92,62 @@ int age = int.Parse(Console.ReadLine());
 //    Console.WriteLine("Payments will be late!!");
 //}
 
-switch (age)
-{
-    case < 18:
-    case > 65:
-        Console.WriteLine("Sorry, your age is not within the range we are looking for");
-        break;
-    case 23:
-        Console.WriteLine("Wow, exacly what we are looking for");
-        break;
-    default: 
-        Console.WriteLine("Great, you can now start the application!");
-        break;
-}
-
+//switch (age)
+//{
+//    case < 18:
+//    case > 65:
+//        Console.WriteLine("Sorry, your age is not within the range we are looking for");
+//        break;
+//    case 23:
+//        Console.WriteLine("Wow, exacly what we are looking for");
+//        break;
+//    default: 
+//        Console.WriteLine("Great, you can now start the application!");
+//        break;
+//}
 Console.WriteLine("Choose the action you want to do: ");
 Console.WriteLine("1. Add employee");
 Console.WriteLine("2. Update employee");
 Console.WriteLine("3. Delete employee");
+Console.WriteLine("99. Exit application");
 string selectedAction = Console.ReadLine();
 
-switch (selectedAction)
+while (selectedAction != "99")
 {
-    case "1":
-        Console.WriteLine("Adding new employee...");
-        break;
-    case "2": 
-        Console.WriteLine("Updating employee...");
-        break;
-    case "3":
-        Console.WriteLine("Deleting employee...");
-        break;
-    default:
-        Console.WriteLine("Invalid input");
-        break;
+    switch (selectedAction)
+    {
+        case "1":
+            Console.WriteLine("Adding new employee...");
+            break;
+        case "2":
+            Console.WriteLine("Updating employee...");
+            break;
+        case "3":
+            Console.WriteLine("Deleting employee...");
+            break;
+        default:
+            Console.WriteLine("Invalid input");
+            break;
+    }
+    Console.WriteLine("Choose the action you want to do: ");
+    Console.WriteLine("1. Add employee");
+    Console.WriteLine("2. Update employee");
+    Console.WriteLine("3. Delete employee");
+    Console.WriteLine("99. Exit application");
+    selectedAction = Console.ReadLine();
 }
+
+Console.WriteLine("Closing Application");
+
+
+Console.WriteLine("Enter a vlaue:");
+int max = int.Parse(Console.ReadLine());
+int counter = 0;
+
+while(counter < max)
+{
+    Console.WriteLine(counter);
+    counter++;
+}
+
+Console.WriteLine("The counter is at Max");

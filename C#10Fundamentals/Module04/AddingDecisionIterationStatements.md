@@ -60,12 +60,18 @@
 
 ### Loop Options in C\#
 
-- While
+#### While
+
     - pass in a bool expression
     - executes while the bool is true
     - condition is tested before loop runs
     - is only tested again after it runs
     - very easy to create infinate loops
-- do-while
-    - 
-- for
+    - loops can be nested as much as we want
+#### do-while
+
+- 
+
+#### for
+
+-
